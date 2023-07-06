@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap");
+
+/* CSS CUSTOM PROPERTIES */
+
+:root {
+  --ff-primary: "Open Sans", sans-serif;
+
+  --clr-base-light: hsl(0, 0%, 100%);
+  --clr-base-dark: hsl(0, 0%, 20%);
+  --clr-primary-accent: hsl(134, 61%, 41%); 
+  --clr-secondary-accent: hsl(202, 98%, 41%); 
+
+}
+
+/* BASIC RESET */
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img,
+picture,
+svg {
+    width: 100%;
+}
+
+/* GENERAL & DEFAULT STYLES */
+
+body {
+    font-family: var(--ff-primary);
+    background: var(--clr-base-light);
+    color: var(--clr-base-dark);
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--clr-base-dark);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+p {
+    margin: .625rem 0;
+}
+
+/* UTILITY CLASSES */
+
+/* text styles */
+
+.text__primary {
+ color: var(--clr-primary-accent);
+}
+
+.text__secondary {
+    color: var(--clr-secondary-accent);
+}
+
+/* NAVIGATION */
+
+.nav__bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--clr-base-dark);
+    color: var(--clr-base-light);
+    opacity: 0.8;
+    width: 100%;
+    height: 6vh;
+    position: fixed;
+    top: 0px;
+    padding: 0 1.875rem;
+}
+
+.nav__bar .logo {
+    font-weight: 400;
+}
+
+.nav__bar a{
+    color: var(--clr-base-light);
+    padding: .625rem 1.25rem;
+    margin: 0 .3125rem;
+}
+
+.nav__bar a:hover,
+.nav__bar a:focus {
+    border-bottom: solid 2px var(--clr-primary-accent);
+}
+
+.nav__bar ul {
+    display: flex;
+}
+
+
+
+
+
+
