@@ -14,7 +14,7 @@
   --fs-400: 1rem;
   --fs-500: 1.25rem;
   --fs-600: 1.5rem;
-  --fs-700: 2rem;
+  --fs-700: 2.5rem;
   --fs-800: 3rem;
   --fs-900: 3.5rem;
 
@@ -60,7 +60,8 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-weight: 300;
     line-height: 1.1;
 }
@@ -82,7 +83,6 @@ p {
 }
 
 /* button styles */
-
 
 .btn {
   cursor: pointer;
@@ -112,6 +112,78 @@ p {
 .btn__light {
   background: var(--clr-base-med);
   color: var(--clr-base-dark);
+}
+
+.btn__outline {
+    background: transparent;
+    border: 1px solid var(--clr-base-light);
+}
+
+/* background styles */
+
+.bg__primary {
+    background: var(--clr-primary-accent);
+    color: var(--clr-base-light);
+}
+
+.bg__secondary {
+    background: var(--clr-secondary-accent);
+    color: var(--clr-base-light);
+}
+
+.bg__dark {
+    background: var(--clr-base-dark);
+    color: var(--clr-base-light);
+}
+
+.bg__light {
+    background: var(--clr-base-med);
+    color: var(--clr-base-dark);
+}
+/* layout styles */
+
+.flex__items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.flex__items > div {
+   padding: 1.25rem; 
+}
+
+.flex__columns .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.flex__columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex__columns .column .column--1,
+.flex__columns .column .column--2 {
+    height: 100%;
+}
+
+.flex__columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flex__columns .column--2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1.875rem;
+
 }
 
 
@@ -193,6 +265,40 @@ p {
     text-align: center;
     height: 100%;
     padding: 0 1.25rem;
+}
+
+/* ICONS */
+
+.icons {
+    padding: 1.875rem;
+}
+
+.icons__title {
+    font-weight: bold;
+    margin-bottom: .9375rem;
+}
+
+.icons__style {
+    background-color: var(--clr-primary-accent);
+    color: var(--clr-base-light);
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: .9375rem;
+}
+
+/* SOLUTIONS */
+
+.solutions__title {
+    font-size: var(--fs-700);
+    font-weight: 100;
+}
+
+.solutions__sub--title {
+   margin-bottom: .625rem; 
+}
+
+.solutions__text {
+    margin: 1.25rem 0;
 }
 
 
