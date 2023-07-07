@@ -290,6 +290,11 @@ p {
     z-index: 10;
 }
 
+.hero.blog {
+    background: url(/images/home/blog.jpg) no-repeat center center/cover;
+    height: 30vh;
+}
+
 .hero__title {
   font-size: var(--fs-900);
 }
@@ -409,6 +414,33 @@ p {
    margin-top: 1.25rem;
 }
 
+/* POST */
+
+.post {
+    text-align: center;
+    padding: 3.125rem 1.875rem;
+}
+
+.post__title {
+    font-size: var(--fs-700);
+    margin-bottom: 1.25rem;
+    padding-bottom: .625rem;
+    border-bottom: 1px solid var(--clr-base-med);
+}
+
+.post img {
+    width: 80%;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+
+}
+
+.meta {
+    margin-bottom: 1.875rem;
+}
+
 /* FOOTER */
 
 .footer {
@@ -433,7 +465,7 @@ p {
     margin-right: 1.875rem;
 }
 
-/* MEDIA QUERY */
+
 
 
 
