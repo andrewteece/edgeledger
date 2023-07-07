@@ -342,5 +342,67 @@ p {
     opacity: 0.6;
 }
 
+/* TEAM */
+
+.team img {
+    border-radius: 50%;
+}
+
+/* CONTACT */
+
+.callback--form {
+    width: 100%;
+    padding: 1.25rem 0;
+}
+
+.callback--form label {
+    display: block;
+    margin-bottom: .3125rem;
+}
+
+.callback--form .form__control {
+  margin-bottom: .9375rem;
+}
+
+.callback--form input {
+   width: 100%;
+   padding: .3125rem; 
+   height: 2.5rem;
+   border: 1px solid var(--clr-base-med);
+}
+
+.callback--form input:focus {
+    outline-color: var(--clr-primary-accent);
+}
+
+.callback--form .btn {
+   padding: .75rem 0; 
+   margin-top: 1.25rem;
+}
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 10vh;
+}
+
+.footer a {
+    color: var(--clr-base-light);
+}
+
+.footer a:hover,
+.footer a:focus {
+    color: var(--clr-primary-accent);
+}
+
+.footer .social > * {
+    margin-right: 1.875rem;
+}
+
 
 
