@@ -206,6 +206,17 @@ p {
     padding: 1.25rem 1.25rem 2.5rem;
 }
 
+@media (max-width: 48rem) {
+    .flex__items {
+        flex-direction: column;
+    }
+    .flex__columns .column,
+    .flex__grid .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
 
 
 
@@ -242,6 +253,18 @@ p {
 
 .nav__bar ul {
     display: flex;
+}
+
+@media (max-width: 48rem) {
+    .nav__bar {
+        flex-direction: column;
+        height: 12vh;
+        padding: 1.25rem;
+    }
+    .nav__bar a {
+        padding: .625rem;
+        margin: 0 .1875rem;
+    }
 }
 
 /* HEADER */
@@ -348,6 +371,12 @@ p {
     border-radius: 50%;
 }
 
+@media (max-width: 48rem) {
+    .team img {
+        width: 80%;
+    }
+}
+
 /* CONTACT */
 
 .callback--form {
@@ -403,6 +432,10 @@ p {
 .footer .social > * {
     margin-right: 1.875rem;
 }
+
+/* MEDIA QUERY */
+
+
 
 
 
