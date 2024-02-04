@@ -1,6 +1,6 @@
 ### Screenshot
 
-![](./img/screenshot.png)
+![](./images/screenshot.png)
 
 
 ### Link
